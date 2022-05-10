@@ -37,7 +37,7 @@ buttons.rain.addEventListener("click", function(){
 })
 
 buttons.coffe.addEventListener("click", function(){
-    console.log("fala zé")
+    console.log("TEste")
 })
 
 buttons.fireplace.addEventListener("click", function(){
