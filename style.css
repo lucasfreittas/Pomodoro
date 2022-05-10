@@ -17,28 +17,37 @@ body{
     width: 100vw;
     height: 100vh;
 
+    padding: 3rem;
+
     background: rgb(2,0,36);
     background: linear-gradient(149deg, rgba(2,0,36,1) 100%, rgba(0,0,89,1) 100%);
 }
 
-.timer-display span{
+.timer{
+    text-align: center;
+}
 
-    font-size: clamp(5rem, 8rem + 1vw, 10rem);
+.timer-display span{
+    
+    font-size: clamp(3rem, 9.0rem + 4.5vw, 30rem);
 }
 
 svg{
     fill: white;
+    height: 50px;
     
 }
 
 .buttons{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    max-width: 99%;
     
 }
 
 .buttons svg{
-    width: 4rem;
+    width: clamp(5rem, 1rem + 1vw, 7rem);
 }
 
 .hide{
@@ -46,5 +55,86 @@ svg{
 }
 
 .sounds{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 5rem;
 }
+
+.card{
+    background-color: #643bbc25;
+    padding: clamp(2rem, 3rem + 2vw, 10rem);
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+
+}
+
+@media (min-width: 900px){
+    body{
+        flex-direction: row;
+        gap: clamp(2rem, 1rem + 8vw, 15rem) ;
+    }
+
+    .timer-display span{
+    
+        font-size: clamp(4rem, 8.0rem + 4.5vw, 12.6rem);
+    }
+    
+    .card{
+        max-width: 20rem;
+    }
+
+    .sounds{
+        max-width: 40rem;
+        gap: 2rem;
+        margin-top: 0px;
+    }
+
+    .timer{
+        margin-top: -5rem;
+    }
+
+}
+
+/*------------------------------------ANIMATIONS------------------------------*/
+/* Classe para trocar quando selecionar */
+.selected{
+    animation: buttonsEffect 200ms ease-in-out forwards;
+}
+
+.buttons svg:hover{
+    animation: setEffect 200ms ease-in-out forwards;
+    cursor: pointer;
+}
+
+@keyframes buttonsEffect{
+0%{
+
+        background-color: #643bbc25;
+        transform: scale(1.0)
+}
+
+100%{
+        background-color: #643bbc6e;
+        transform: scale(1.03)
+    }
+}
+
+@keyframes setEffect{
+    0%{
+    
+            fill: white;
+            transform: scale(1.0)
+    }
+    
+    100%{
+            fill: #43d3fd;
+            transform: scale(1.1)
+        }
+    }
+
+
