@@ -33,7 +33,7 @@ buttons.florest.addEventListener("click", function(){
 })
 
 buttons.rain.addEventListener("click", function(){
-    console.log("fala zé")
+    console.log("updating test")
 })
 
 buttons.coffe.addEventListener("click", function(){
