@@ -41,5 +41,5 @@ buttons.coffe.addEventListener("click", function(){
 })
 
 buttons.fireplace.addEventListener("click", function(){
-    console.log("fala zé")
+    console.log("Teste")
 })
