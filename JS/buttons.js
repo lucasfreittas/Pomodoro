@@ -1,5 +1,5 @@
 
-//--------------------------------Control Buttons----------------------------------------------------//
+//--------------------------------Control Buttons---------------------------------------------------//
 
 export const play = document.querySelector(".play")
 export const pause = document.querySelector(".pause")
