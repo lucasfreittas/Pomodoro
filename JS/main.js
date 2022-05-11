@@ -7,21 +7,25 @@ buttons.play.addEventListener("click", function(){
     controls.play()
     controls.watch()
     countdown.play()
+    countdown.error()
 })
 
 buttons.pause.addEventListener("click", function(){
     controls.pause()
     countdown.pause()
+    countdown.error()
 })
 
 buttons.stop.addEventListener("click", function(){
     controls.stop()
     controls.pause()
     countdown.stop()
+    countdown.error()
 })
 
 buttons.watch.addEventListener("click", function(){
    countdown.watch()
+   
  
 })
 
@@ -29,13 +33,13 @@ buttons.plusTime.addEventListener("click", function(){
     countdown.plusFive()
     controls.play()
     controls.watch()
+    countdown.error()
 
 })
 
 buttons.minusTime.addEventListener("click", function(){
     countdown.minusFive()
-    controls.play()
-    controls.watch()
+    countdown.error()
 })
 
 buttons.florest.addEventListener("click", function(){
