@@ -1,5 +1,6 @@
 import * as buttons from "./buttons.js"
 import * as controls from "./controls.js"
+import * as countdown from "./countdown.js"
 
 
 buttons.play.addEventListener("click", function(){
@@ -17,7 +18,7 @@ buttons.stop.addEventListener("click", function(){
 })
 
 buttons.watch.addEventListener("click", function(){
-   
+   countdown.watch()
 })
 
 buttons.plusTime.addEventListener("click", function(){
