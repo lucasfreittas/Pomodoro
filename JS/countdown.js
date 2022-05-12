@@ -91,8 +91,9 @@ export let minusFive = () => {
 }
 
 export let error = () => {
+    let seconds = Number(secondsDisplay.textContent)
     
-    if(newMinutes <= 0){
+    if(newMinutes <= 0 && seconds <= 0){
         pause()
         controls.stop()
         controls.pause()
