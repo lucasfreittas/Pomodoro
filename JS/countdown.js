@@ -1,5 +1,6 @@
 import * as buttons from "./buttons.js";
 import * as controls from "./controls.js";
+import * as sound from "./sounds.js";
 
 let minutesDisplay = buttons.minutes
 let secondsDisplay = buttons.seconds
@@ -28,12 +29,14 @@ export let play = () => {
     seconds = seconds - 1
 
     if(seconds < 0){
-        seconds = 59
+        seconds = 2
         newMinutes = newMinutes -1
     }else if(newMinutes == 0 && seconds == 0){
         refreshDisplay(newMinutes, seconds)
+        sound.endTime()
         controls.stop()
         controls.pause()
+        controls.timeless()
         return
     }
 

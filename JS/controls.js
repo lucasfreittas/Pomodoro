@@ -21,6 +21,16 @@ export const stop = () => {
     buttons.watch.classList.remove('hide')
 }
 
+export const timeless = () => {
+    let body = document.querySelector('body')
+    body.classList.add('timeless')
+}
+
+export const newTime = () => {
+    let body = document.querySelector('body')
+    body.classList.remove('timeless')
+}
+
 let selected 
 
 export const florest = () => {
