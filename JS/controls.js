@@ -1,4 +1,5 @@
 import * as buttons from "./buttons.js"
+import * as sound from "./sounds.js"
 
 export const play = () => {
     buttons.play.classList.add('hide')
@@ -48,21 +49,29 @@ export const toggleClass = () => {
             buttons.rain.classList.remove('selected')
             buttons.fireplace.classList.remove('selected')
             buttons.coffe.classList.remove('selected')
+            sound.stopSound()
+            sound.playFlorest()
         break;
         case 'rain':
             buttons.florest.classList.remove('selected')
             buttons.fireplace.classList.remove('selected')
             buttons.coffe.classList.remove('selected')
+            sound.stopSound()
+            sound.playRain()
         break;
         case 'fireplace':
             buttons.rain.classList.remove('selected')
             buttons.florest.classList.remove('selected')
             buttons.coffe.classList.remove('selected')
+            sound.stopSound()
+            sound.playFireplace()
         break;
         case 'coffe':
             buttons.rain.classList.remove('selected')
             buttons.fireplace.classList.remove('selected')
             buttons.florest.classList.remove('selected')
+            sound.stopSound()
+            sound.playCoffe()
         break;
 
     }

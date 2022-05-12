@@ -1,6 +1,7 @@
 import * as buttons from "./buttons.js"
 import * as controls from "./controls.js"
 import * as countdown from "./countdown.js"
+import * as sound from "./sounds.js"
 
 
 buttons.play.addEventListener("click", function(){
@@ -46,6 +47,7 @@ buttons.florest.addEventListener("click", function(){
     
     controls.florest()
     controls.toggleClass()
+
 })
 
 buttons.rain.addEventListener("click", function(){
