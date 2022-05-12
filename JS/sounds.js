@@ -9,6 +9,7 @@ export const playFlorest= () => {
     florestSound.currentTime = 0;
     florestSound.play();
     florestSound.loop = true;
+
 }
 
 export const playRain= () => {
