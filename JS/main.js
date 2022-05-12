@@ -27,6 +27,8 @@ buttons.stop.addEventListener("click", function(){
     countdown.stop()
     sound.newTime()
     controls.newTime()
+    sound.stopSound()
+    controls.diselectAllClasses()
 })
 
 buttons.watch.addEventListener("click", function(){
@@ -59,6 +61,7 @@ buttons.florest.addEventListener("click", function(){
     controls.florest()
     controls.toggleClass()
     controls.newTime()
+    controls.toggleMusic()
 
 })
 
@@ -66,6 +69,7 @@ buttons.rain.addEventListener("click", function(){
     controls.rain()
     controls.toggleClass()
     controls.newTime()
+    controls.toggleMusic()
 })
 
 buttons.coffe.addEventListener("click", function(){
@@ -73,10 +77,12 @@ buttons.coffe.addEventListener("click", function(){
     controls.coffe()
     controls.toggleClass()
     controls.newTime()
+    controls.toggleMusic()
 })
 
 buttons.fireplace.addEventListener("click", function(){
     controls.fireplace()
     controls.toggleClass()
     controls.newTime()
+    controls.toggleMusic()
 })

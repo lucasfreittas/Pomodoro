@@ -1,5 +1,7 @@
 import * as buttons from "./buttons.js"
 import * as sound from "./sounds.js"
+let selected;
+let selectedMusic;
 
 export const play = () => {
     buttons.play.classList.add('hide')
@@ -31,7 +33,6 @@ export const newTime = () => {
     body.classList.remove('timeless')
 }
 
-let selected 
 
 export const florest = () => {
     buttons.florest.classList.toggle('selected')
@@ -85,4 +86,26 @@ export const toggleClass = () => {
         break;
 
     }
+}
+
+export const diselectAllClasses = () => {
+            buttons.rain.classList.remove('selected')
+            buttons.fireplace.classList.remove('selected')
+            buttons.coffe.classList.remove('selected')
+            buttons.florest.classList.remove('selected')
+}
+
+export const toggleMusic = () => {
+    if(buttons.florest.classList.contains('selected')){
+        sound.playFlorest()
+    }else if(buttons.rain.classList.contains('selected')){
+        sound.playFlorest()
+    }else if(buttons.fireplace.classList.contains('selected')){
+        sound.playFireplace()
+    }else if(buttons.coffe.classList.contains('selected')){
+        sound.playCoffe()
+    }else{
+        sound.stopSound()
+    }
+    
 }
