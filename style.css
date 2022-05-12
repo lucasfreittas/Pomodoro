@@ -103,24 +103,31 @@ svg{
 /*------------------------------------ANIMATIONS------------------------------*/
 /* Classe para trocar quando selecionar */
 .selected{
-    animation: buttonsEffect 200ms ease-in-out forwards;
+    animation: buttonsEffect 200ms ease forwards;
 }
 
+.card:hover{
+    background-color: #643bbc6e;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
 .buttons svg:hover{
-    animation: setEffect 200ms ease-in-out forwards;
+    animation: setEffect 100ms ease forwards;
     cursor: pointer;
 }
 
 @keyframes buttonsEffect{
 0%{
 
-        background-color: #643bbc25;
-        transform: scale(1.0)
-}
+        background-color: #643bbc6e;
+        transform: scale(1.00);
+}   
 
 100%{
-        background-color: #643bbc6e;
-        transform: scale(1.03)
+        background-color: #8257e5;
+        transform: scale(1.03);
     }
 }
 

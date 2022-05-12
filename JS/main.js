@@ -43,17 +43,23 @@ buttons.minusTime.addEventListener("click", function(){
 })
 
 buttons.florest.addEventListener("click", function(){
-    console.log("fala zé")
+    
+    controls.florest()
+    controls.toggleClass()
 })
 
 buttons.rain.addEventListener("click", function(){
-    console.log("updating test")
+    controls.rain()
+    controls.toggleClass()
 })
 
 buttons.coffe.addEventListener("click", function(){
-    console.log("TEste")
+    
+    controls.coffe()
+    controls.toggleClass()
 })
 
 buttons.fireplace.addEventListener("click", function(){
-    console.log("Teste")
+    controls.fireplace()
+    controls.toggleClass()
 })
