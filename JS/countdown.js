@@ -29,7 +29,7 @@ export let play = () => {
     seconds = seconds - 1
 
     if(seconds < 0){
-        seconds = 2
+        seconds = 59
         newMinutes = newMinutes -1
     }else if(newMinutes == 0 && seconds == 0){
         refreshDisplay(newMinutes, seconds)
