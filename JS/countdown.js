@@ -35,8 +35,9 @@ export let play = () => {
         refreshDisplay(newMinutes, seconds)
         sound.endTime()
         controls.stop()
-        controls.pause()
         controls.timeless()
+        pause()
+    
         return
     }
 

@@ -8,9 +8,9 @@ buttons.play.addEventListener("click", function(){
     controls.play()
     controls.watch()
     countdown.play()
-    countdown.error()
     sound.newTime()
     controls.newTime()
+    countdown.error()
 })
 
 buttons.pause.addEventListener("click", function(){
@@ -25,7 +25,6 @@ buttons.stop.addEventListener("click", function(){
     controls.stop()
     controls.pause()
     countdown.stop()
-    countdown.error()
     sound.newTime()
     controls.newTime()
 })
