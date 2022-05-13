@@ -23,6 +23,12 @@ export const stop = () => {
     buttons.watch.classList.remove('hide')
 }
 
+export const nightMode = () => {
+    buttons.night.classList.toggle('hide')
+    buttons.day.classList.toggle('hide')
+    
+}
+
 export const timeless = () => {
     let body = document.querySelector('body')
     body.classList.add('timeless')
