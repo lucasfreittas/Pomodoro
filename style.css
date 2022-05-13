@@ -87,6 +87,8 @@ svg{
 }
 
 .card{
+
+    position: relative;
     background-color: #643bbc25;
     padding: clamp(2rem, 3rem + 2vw, 10rem);
     border-radius: 1rem;
@@ -95,12 +97,30 @@ svg{
 
 }
 
+.slider{
+    position: absolute;
+    left: 15%;
+    bottom: 2rem;
+    width: 70%;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
     .night-mode{
         position: static;
         margin: 4rem auto;
         
     }
+    .slider{
+        bottom: clamp(0.2rem , 1.3rem + 2vh, 1.5rem);
+    }
+
 }
 
 @media (min-width: 900px){
@@ -128,6 +148,7 @@ svg{
         margin-top: -5rem;
     }
 
+  
 }
 
 /*------------------------------------ANIMATIONS------------------------------*/
