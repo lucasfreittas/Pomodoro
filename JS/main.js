@@ -86,3 +86,11 @@ buttons.fireplace.addEventListener("click", function(){
     controls.newTime()
     controls.toggleMusic()
 })
+
+buttons.day.addEventListener('click', function(){
+    controls.nightMode()
+})
+
+buttons.night.addEventListener('click', function(){
+    controls.nightMode()
+})

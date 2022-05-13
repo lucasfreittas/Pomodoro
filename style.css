@@ -23,6 +23,20 @@ body{
     background: linear-gradient(149deg, rgba(2,0,36,1) 100%, rgba(0,0,89,1) 100%);
 }
 
+.body-mode{
+    background: #c9b3ff;
+}
+
+.night-mode{
+    position: fixed;
+    top: 10rem;
+    right: 10rem;
+}
+
+.night-mode:hover{
+    cursor: pointer;
+}
+
 .timeless{
     background: #d95550 ;
 }
@@ -34,8 +48,12 @@ body{
 .timer-display span{
     
     font-size: clamp(3rem, 9.0rem + 4.5vw, 30rem);
+    user-select: none;
 }
 
+.timer-display span:hover{
+    cursor:default;
+}
 svg{
     fill: white;
     height: 50px;
@@ -75,6 +93,14 @@ svg{
     text-align: center;
     transition: all 300ms ease-in-out;
 
+}
+
+@media (max-width: 768px) {
+    .night-mode{
+        position: static;
+        margin: 4rem auto;
+        
+    }
 }
 
 @media (min-width: 900px){

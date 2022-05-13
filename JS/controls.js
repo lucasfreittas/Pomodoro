@@ -26,7 +26,8 @@ export const stop = () => {
 export const nightMode = () => {
     buttons.night.classList.toggle('hide')
     buttons.day.classList.toggle('hide')
-    
+    buttons.body.classList.toggle("body-mode")
+
 }
 
 export const timeless = () => {
