@@ -1,10 +1,10 @@
 import * as buttons from "./buttons.js"
 
-const florestSound = new Audio("./Sounds/Floresta.wav")
-const rainSound  = new Audio("./Sounds/Chuva.wav")
-const coffeSound  = new Audio("./Sounds/Cafeteria.wav")
-const fireplaceSound  = new Audio("./Sounds/Lareira.wav")
-const clockAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true")
+export const florestSound = new Audio("./Sounds/Floresta.wav")
+export const rainSound  = new Audio("./Sounds/Chuva.wav")
+export const coffeSound  = new Audio("./Sounds/Cafeteria.wav")
+export const fireplaceSound  = new Audio("./Sounds/Lareira.wav")
+export const clockAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true")
 
 export const playFlorest= () => {
     florestSound.currentTime = 0;
@@ -58,4 +58,8 @@ export const endTime = () => {
 
 export const newTime = () => {
     clockAudio.pause();
+}
+
+export const volume = (song, slider) => {
+    song.volume = slider.value;
 }

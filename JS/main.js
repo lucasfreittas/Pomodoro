@@ -94,3 +94,27 @@ buttons.day.addEventListener('click', function(){
 buttons.night.addEventListener('click', function(){
     controls.nightMode()
 })
+
+buttons.florestVol.addEventListener('change', function(){
+    let florest = sound.florestSound
+    let slider = buttons.florestVol
+    sound.volume(florest, slider)
+})
+
+buttons.rainVol.addEventListener('change', function(){
+    let rain = sound.rainSound
+    let slider = buttons.rainVol
+    sound.volume(rain, slider)
+})
+
+buttons.fireVol.addEventListener('change', function(){
+    let fire = sound.fireplaceSound
+    let slider = buttons.fireVol
+    sound.volume(fire, slider)
+})
+
+buttons.coffeVol.addEventListener('change', function(){
+    let coffe = sound.coffeSound
+    let slider = buttons.coffeVol
+    sound.volume(coffe, slider)
+})
