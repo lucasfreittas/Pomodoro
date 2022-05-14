@@ -23,8 +23,9 @@ body{
     background: linear-gradient(149deg, rgba(2,0,36,1) 100%, rgba(0,0,89,1) 100%);
 }
 
-.body-mode{
+.body-night{
     background: #c9b3ff;
+    color: #643bbc;
 }
 
 .night-mode{
@@ -58,6 +59,14 @@ svg{
     fill: white;
     height: 50px;
     
+}
+.svgChange{
+    fill: #643bbc;
+}
+
+.svgChange:hover{
+    fill: black;
+    animation: nightEffect 100ms ease forwards !important;
 }
 
 .buttons{
@@ -202,5 +211,18 @@ svg{
             transform: scale(1.1)
         }
     }
+
+@keyframes nightEffect{
+        0%{
+        
+                fill: #643bbc;
+                transform: scale(1.0)
+        }
+        
+        100%{
+                fill: black;
+                transform: scale(1.1)
+            }
+        }
 
 

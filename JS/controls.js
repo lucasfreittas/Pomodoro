@@ -26,7 +26,19 @@ export const stop = () => {
 export const nightMode = () => {
     buttons.night.classList.toggle('hide')
     buttons.day.classList.toggle('hide')
-    buttons.body.classList.toggle("body-mode")
+    buttons.body.classList.toggle("body-night")
+    buttons.playSVG.classList.toggle("svgChange")
+    buttons.pauseSVG.classList.toggle("svgChange")
+    buttons.stopSVG.classList.toggle("svgChange")
+    buttons.plusSVG.classList.toggle("svgChange")
+    buttons.minusSVG.classList.toggle("svgChange")
+    buttons.florestSVG.classList.toggle("svgChange")
+    buttons.rainSVG.classList.toggle("svgChange")
+    buttons.fireSVG.classList.toggle("svgChange")
+    buttons.coffeSVG.classList.toggle("svgChange")
+    buttons.watchSVG.classList.toggle("svgChange")
+
+
 
 }
 

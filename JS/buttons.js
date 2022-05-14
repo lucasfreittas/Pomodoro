@@ -32,6 +32,20 @@ export const seconds = document.querySelector(".secondsDisplay");
 //--------------------------------Night Mode---------------------------------------------------------//
 export const night = document.querySelector(".night");
 export const day = document.querySelector(".day");
+export const playSVG = document.querySelector("#playSVG")
+export const pauseSVG = document.querySelector("#pauseSVG")
+export const stopSVG = document.querySelector("#stopSVG")
+export const watchSVG = document.querySelector("#watchSVG")
+export const plusSVG = document.querySelector("#plusSVG")
+export const minusSVG = document.querySelector("#minusSVG")
+export const florestSVG = document.querySelector("#florestSVG")
+export const rainSVG = document.querySelector("#rainSVG")
+export const coffeSVG = document.querySelector("#coffeSVG")
+export const fireSVG = document.querySelector("#fireSVG")
+
+
 
 //--------------------------------Body----------------------------------------------------------------//
 export const body = document.querySelector("body");
+
+
