@@ -106,7 +106,7 @@ export const toggleMusic = () => {
     if(buttons.florest.classList.contains('selected')){
         sound.playFlorest()
     }else if(buttons.rain.classList.contains('selected')){
-        sound.playFlorest()
+        sound.playRain()
     }else if(buttons.fireplace.classList.contains('selected')){
         sound.playFireplace()
     }else if(buttons.coffe.classList.contains('selected')){

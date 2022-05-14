@@ -28,3 +28,9 @@ export const day = document.querySelector(".day");
 
 //--------------------------------Body----------------------------------------------------------------//
 export const body = document.querySelector("body");
+
+//--------------------------------Volume--------------------------------------------------------------//
+export const florestVol = document.querySelector("#florestVol")
+export const rainVol = document.querySelector("#rainVol")
+export const fireVol = document.querySelector("#fireVol")
+export const coffeVol = document.querySelector("#coffeVol")
