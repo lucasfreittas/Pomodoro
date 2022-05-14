@@ -16,6 +16,13 @@ export const rain = document.querySelector(".rain");
 export const coffe = document.querySelector(".coffe");
 export const fireplace = document.querySelector(".fireplace");
 
+//--------------------------------Volumes-------------------------------------------------------//
+
+export const florestVol = document.querySelector("#florestVol");
+export const rainVol = document.querySelector("#rainVol");
+export const coffeVol = document.querySelector("#coffeVol");
+export const fireVol = document.querySelector("#fireVol");
+
 
 //--------------------------------Timer Display-----------------------------------------------------//
 export const minutes = document.querySelector(".minutesDisplay");
