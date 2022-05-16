@@ -138,6 +138,10 @@ svg{
         bottom: clamp(0.2rem , 1.3rem + 2vh, 1.5rem);
     }
 
+    .card{
+        min-width: 13rem;
+    }
+
 }
 
 @media (min-width: 900px){
